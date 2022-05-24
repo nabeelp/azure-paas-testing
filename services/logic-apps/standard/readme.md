@@ -2,7 +2,7 @@
 
 Folder | Description
 --- | --- 
-deploy | Deployment artefacts for the various test, placed seperated from the tests themselves to enable sharing
+deploy | Deployment artefacts for the various tests, placed seperate from the tests themselves to enable sharing
 
 # Notes
 

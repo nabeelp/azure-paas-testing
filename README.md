@@ -17,7 +17,7 @@ At a high level, the tests are organised according to the following structure:
 
 Within [Services](/services/) there be multiple variations, based on the configuration options that have an impact on the performance of that service.  For example, the Logic Apps service tests will be structured to reflect differences in the Consumption and Standard tiers, and the different hosting models for each of these tiers. Within these there may be multiple test cases to reflect different load testing profiles and performance-related configuration settings.
 
-Test within [Scenarios](/scenarios/) will re-use the resources created within the [Services](/services/) folder to create a composite test case for a specific scenario.
+Testa within [Scenarios](/scenarios/) will re-use the resources created within the [Services](/services/) folder, to create a composite test case for a specific scenario.
 
 # Current Status
 
@@ -26,6 +26,8 @@ Test within [Scenarios](/scenarios/) will re-use the resources created within th
 # Plans
 
 - Create Logic Apps consumption HTTP trigger test
+- Service Bus (https://www.youtube.com/watch?v=LM7DByKOHBs&list=PLmE4bZU0qx-wxBKRImk1p0cPz2JEUBjeM&index=2)
+- Event Hubs (https://www.youtube.com/watch?v=358TuU88Nvg&list=PLmE4bZU0qx-wxBKRImk1p0cPz2JEUBjeM&index=3)
 
 # Contributing
 
