@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "triggers": {
+        "manual": {
+            "type": "Request",
+            "kind": "Http",
+            "inputs": {
+                "schema": {
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                }
+            }
+        }
+    },
+    "actions": {
+        "Response": {
+            "runAfter": {},
+            "type": "Response",
+            "kind": "Http",
+            "inputs": {
+                "body": {
+                    "message": "Welcome @{triggerBody()?['name']}"
+                },
+                "schema": {
+                    "properties": {
+                        "message": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "statusCode": 200
+            }
+        }
+    },
+    "outputs": {}
+}
